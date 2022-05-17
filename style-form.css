@@ -12,6 +12,13 @@ header{
     width: 100vw;
 }
 
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
 footer i{
     align-self: center;
 }
