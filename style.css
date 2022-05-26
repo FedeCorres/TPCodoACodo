@@ -142,16 +142,34 @@ ul li:hover {
 :-ms-input-placeholder {
     color: #CCC;
 }
+#pelicula-portada{
+    height: 70vh;
+    background-size: cover;
+    margin-top: -1vw;
+    margin-left: -1vw;
+    width: 100vw;
+    background: url(posters/backdrop.jpg);
+
+}
+#pelicula-portada img{
+    width: 100%;
+    height: 70vh;
+}
 
 main {
     margin: 1vw;
 }
-
+.contenedor-contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .grid-container {
     display: grid;
+    width: 80vw;
     background-color: #080F28;
     grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin: 2rem;
 }
 
@@ -175,6 +193,7 @@ main {
 }
 .item-grid img{
     min-height: 300px;
+    
     border-radius: 5px;
     border: white;
     border-style: double;
