@@ -1,0 +1,24 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+}
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 100vw;
+}
+
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
+}
+footer i{
+    align-self: center;
+}
