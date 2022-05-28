@@ -1,15 +1,19 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-main{
-    padding-top: 10vh;
+
+main {
+    padding-top: 8.3vh;
     font-size: 1.5vw;
     font-family: 'Montserrat', sans-serif;
 }
-body{
+
+body {
     background-color: #080F28;
 }
+
 header {
     position: fixed;
     z-index: 20;
@@ -20,11 +24,14 @@ header {
     margin-top: -1%;
     height: 10vh;
 }
-#logo img{
+
+#logo img {
     height: auto;
-    width: 10vw;
+    width: 5vw;
     background-color: #182161;
+    color: #FFFFFF;
 }
+
 #flex-nav {
     display: flex;
     flex-direction: row;
@@ -33,14 +40,16 @@ header {
 }
 
 #logo {
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2vw;
-    padding-left: 10px;
+    padding-left: 70px;
     border-color: #424242;
 }
-h1{
+
+h1 {
     color: antiquewhite;
     font-family: 'Montserrat', sans-serif;
     margin-top: 2rem;
@@ -48,6 +57,7 @@ h1{
     display: flex;
     justify-content: center;
 }
+
 ul {
     display: flex;
     flex-direction: row;
@@ -142,28 +152,76 @@ ul li:hover {
 :-ms-input-placeholder {
     color: #CCC;
 }
-#pelicula-portada{
-    height: 70vh;
-    background-size: cover;
-    margin-top: -1vw;
-    margin-left: -1vw;
-    width: 100vw;
-    background: url(posters/backdrop.jpg);
 
+
+.pelicula-principal {
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    width: 102%;
+    background: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 100%), url(posters/backdrop1.jpg);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+    margin-left: -1vw;
+    margin-top: -0.1vw;
 }
-#pelicula-portada img{
-    width: 100%;
-    height: 70vh;
+
+.pelicula-principal .contenedor {
+    margin: 0 auto;
+    margin-bottom: 6.25em;
+}
+
+.pelicula-principal .titulo {
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+    padding-left: 1em;
+}
+
+.pelicula-principal .descripcion {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+    margin-left: 2em;
+}
+
+.pelicula-principal .boton {
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+    margin-left: 2em;
+}
+
+.pelicula-principal .boton:hover {
+    background: #fff;
+    color: #000;
+}
+
+.pelicula-principal .boton i {
+    margin-right: 1.25em;
 }
 
 main {
     margin: 1vw;
 }
-.contenedor-contenido{
+
+.contenedor-contenido {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .grid-container {
     display: grid;
     width: 80vw;
@@ -179,9 +237,10 @@ main {
     justify-content: center;
     align-items: center;
     border-color: #FFF;
+    cursor: pointer;
 }
 
-.item-grid p{
+.item-grid p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,16 +248,52 @@ main {
     font-size: smaller;
     font-family: 'Montserrat', sans-serif;
     margin: 2px;
-
+    height: 50px;
 }
-.item-grid img{
-    min-height: 300px;
-    
+
+.item-grid img {
+    height: 300px;
+    width: 100px;
     border-radius: 5px;
     border: white;
     border-style: double;
     width: 100%;
     height: 100%;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    color: #FFFFFF;
+    background-color: #0A3871;
+    text-decoration: none;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    font-size: 2vh;
+}
+
+footer a {
+    text-decoration: none;
+
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#leyenda-footer {
+    margin-right: 10vw;
+}
+
+#iconos-footer {
+    font-size: 3vh;
 }
 
 @media (max-width: 1024px) {
@@ -211,7 +306,7 @@ main {
     body {
         background-color: #FF33FF;
     }
-    
+
 }
 
 @media (max-width: 480px) {
