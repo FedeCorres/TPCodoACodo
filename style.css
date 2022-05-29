@@ -224,9 +224,9 @@ main {
 
 .grid-container {
     display: grid;
-    width: 80vw;
+    width: 70vw;
     background-color: #080F28;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 0.5fr));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 0.5fr));
     grid-gap: 20px;
     margin: 2rem;
 }
@@ -298,20 +298,29 @@ a:visited {
 
 @media (max-width: 1024px) {
     body {
-        background-color: #3333FF;
+        background-color: #080F28;
+    }
+    .grid-container {
+        display: grid;
+        width: 80vw;
+        background-color: #080F28;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+        grid-gap: 10px;
+        margin: 2rem;
     }
 }
 
 @media (max-width: 768px) {
     body {
-        background-color: #FF33FF;
+        background-color: #080F28;
     }
-
-}
-
-@media (max-width: 480px) {
-    body {
-        background-color: #339933;
+    .grid-container {
+        display: grid;
+        width: 100vw;
+        background-color: #080F28;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+        grid-gap: 10px;
+        margin: 2rem;
     }
 
 }
