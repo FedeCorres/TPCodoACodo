@@ -393,8 +393,8 @@ footer a:visited {
 }
  
 .modalmask:target .resize{
-    width: 60vw;
-    height:50vh;
+    width: 80vw;
+    height:60vh;
 }
 
 /*Boton de cerrar*/
