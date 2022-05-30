@@ -338,7 +338,7 @@ footer a:visited {
 .modalmask {
     position: fixed;
     font-family: Arial, sans-serif;
-    top: -100px;
+    top: 10vh;
     right: 0;
     bottom: 0;
     left: -1px;
@@ -357,7 +357,8 @@ footer a:visited {
 
 /*Formato de la ventana*/
 .modalbox{
-    width: 400px;
+    width: 100vw;
+    height: 100vw;
     position: relative;
     padding: 5px 20px 13px 20px;
     background:none;
@@ -392,8 +393,8 @@ footer a:visited {
 }
  
 .modalmask:target .resize{
-    width:700px;
-    height:500px;
+    width: 60vw;
+    height:50vh;
 }
 
 /*Boton de cerrar*/
@@ -402,9 +403,9 @@ footer a:visited {
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
-    right: -200px;
+    right: -4vw;
     text-align: center;
-    top: -auto;
+    top: -5vh;
     width: 24px;
     text-decoration: none;
     font-weight: bold;
@@ -417,4 +418,3 @@ footer a:visited {
     color:#222;
 }
 
-/*560 315*/
